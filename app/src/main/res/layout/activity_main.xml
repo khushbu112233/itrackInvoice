@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="#ff0000"/>
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"></include>
+
+        <FrameLayout
+            android:id="@+id/frame_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/include_header"
+            android:background="#ffffff"
+            >
+      <!--      <TextView
+                android:id="@+id/txt_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pdf"
+                android:textSize="25sp"
+                android:textColor="#ff0000"/>-->
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</layout>

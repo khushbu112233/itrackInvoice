@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.invoice.aipxperts.Widget.TextView_Regular
+                android:id="@+id/txt_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/header"
+                android:text="Bank Name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="gone"
+                android:textSize="@dimen/lablesize1"/>
+
+            <com.invoice.aipxperts.Widget.Edittext_Regular
+                android:id="@+id/edt_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:textColorHint="@color/header"
+                android:textColor="@color/header"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:textSize="@dimen/edittextsize"
+                android:maxLength="180"
+                android:hint="Bank Name"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.invoice.aipxperts.Widget.TextView_Regular
+                android:id="@+id/txt_account_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/header"
+                android:text="Account Number"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="gone"
+                android:textSize="@dimen/lablesize1"/>
+
+            <com.invoice.aipxperts.Widget.Edittext_Regular
+                android:id="@+id/edt_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:textColorHint="@color/header"
+                android:textColor="@color/header"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:textSize="@dimen/edittextsize"
+                android:maxLength="180"
+                android:hint="Account Number"
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.invoice.aipxperts.Widget.TextView_Regular
+                android:id="@+id/txt_branch_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/header"
+                android:text="Branch Name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="gone"
+                android:textSize="@dimen/lablesize1"/>
+
+            <com.invoice.aipxperts.Widget.Edittext_Regular
+                android:id="@+id/edt_branch_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:textColorHint="@color/header"
+                android:textColor="@color/header"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:textSize="@dimen/edittextsize"
+                android:maxLength="180"
+                android:hint="Branch Name"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.invoice.aipxperts.Widget.TextView_Regular
+                android:id="@+id/txt_IFC_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/header"
+                android:text="IFSC Code"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="gone"
+                android:textSize="@dimen/lablesize1"/>
+
+            <com.invoice.aipxperts.Widget.Edittext_Regular
+                android:id="@+id/edt_IFC_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:textColorHint="@color/header"
+                android:textColor="@color/header"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:textSize="@dimen/edittextsize"
+                android:maxLength="180"
+                android:hint="IFSC Code"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+
+        </LinearLayout>
+
+        <com.invoice.aipxperts.Widget.TextView_Regular
+            android:id="@+id/txt_done"
+            android:layout_below="@+id/ll_down"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:background="@color/header"
+            android:text="DONE"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+</layout>

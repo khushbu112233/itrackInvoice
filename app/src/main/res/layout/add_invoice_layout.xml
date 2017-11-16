@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+        <LinearLayout
+            android:id="@+id/ll_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.invoice.aipxperts.Widget.TextView_Regular
+                android:id="@+id/txt_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/header"
+                android:text="Invoice name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="gone"
+                android:textSize="@dimen/lablesize1"/>
+
+            <com.invoice.aipxperts.Widget.Edittext_Regular
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:textColorHint="@color/header"
+                android:textColor="@color/header"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:textSize="@dimen/edittextsize"
+                android:maxLength="180"
+                android:hint="Name your invoice"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_invoice">
+            <LinearLayout
+                android:id="@+id/ll_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <com.invoice.aipxperts.Widget.TextView_Bold
+                    android:id="@+id/txt_select_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/header"
+                    android:text="Select company"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/edittextsize3"/>
+
+                <com.invoice.aipxperts.Widget.Edittext_Regular
+                    android:id="@+id/edt_select_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/header"
+                    android:textColor="@color/header"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:paddingLeft="7dp"
+                    android:textSize="@dimen/lablesize"
+                    android:hint="Done all steps for create a company"
+                    />
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgCompany"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tick" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_company"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_company">
+            <LinearLayout
+                android:id="@+id/ll_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <com.invoice.aipxperts.Widget.TextView_Bold
+                    android:id="@+id/txt_select_customer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/header"
+                    android:text="Select customer"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/edittextsize3"/>
+
+                <com.invoice.aipxperts.Widget.Edittext_Regular
+                    android:id="@+id/edt_select_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/header"
+                    android:textColor="@color/header"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:paddingLeft="7dp"
+                    android:textSize="@dimen/lablesize"
+                    android:hint="Done all steps for create a customer"
+                    />
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgCustomer"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tick" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_customer"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_line_items_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_customer">
+            <LinearLayout
+                android:id="@+id/ll_line_items_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <com.invoice.aipxperts.Widget.TextView_Bold
+                    android:id="@+id/txt_select_line_items_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/header"
+                    android:text="Line items fields"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/edittextsize3"/>
+
+                <com.invoice.aipxperts.Widget.Edittext_Regular
+                    android:id="@+id/edt_select_line_items_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/header"
+                    android:textColor="@color/header"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:paddingLeft="7dp"
+                    android:textSize="@dimen/lablesize"
+                    android:hint="You select four line items"
+                    />
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgline_items_field"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tick" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_line_items_field"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_line_items_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_line_items_field">
+            <LinearLayout
+                android:id="@+id/ll_line_items_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <com.invoice.aipxperts.Widget.TextView_Bold
+                    android:id="@+id/txt_select_line_items_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/header"
+                    android:text="Line items list"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/edittextsize3"/>
+
+                <com.invoice.aipxperts.Widget.Edittext_Regular
+                    android:id="@+id/edt_select_line_items_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/header"
+                    android:textColor="@color/header"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:paddingLeft="7dp"
+                    android:textSize="@dimen/lablesize"
+                    android:hint="Done all information for item list"
+                    />
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgline_items_list"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tick" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_line_items_list"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_line_items_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_line_items_list">
+            <LinearLayout
+                android:id="@+id/ll_line_items_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <com.invoice.aipxperts.Widget.TextView_Bold
+                    android:id="@+id/txt_select_line_items_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/header"
+                    android:text="Signature/Notes"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/edittextsize3"/>
+
+                <com.invoice.aipxperts.Widget.Edittext_Regular
+                    android:id="@+id/edt_select_line_items_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/header"
+                    android:textColor="@color/header"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:paddingLeft="7dp"
+                    android:textSize="@dimen/lablesize"
+                    android:hint="write signature and notes"
+                    />
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgline_items_signature"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tick" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_line_items_signature"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/header"/>
+        </RelativeLayout>
+        <com.invoice.aipxperts.Widget.TextView_Regular
+            android:id="@+id/txt_done"
+            android:layout_below="@+id/ll_down"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:background="@color/header"
+            android:text="DONE"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+</layout>
